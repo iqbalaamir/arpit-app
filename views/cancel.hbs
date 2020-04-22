@@ -1,0 +1,102 @@
+<html>
+  <head>
+    {{>head}}
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+  </head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark align-items-center">
+  <a class="navbar-brand" href="#">Arpit Project</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link " href="../">Home</a>
+      </li>
+     <li class="nav-item ">
+        <a class="nav-link " href="../class">Schedule Class</a>
+      </li>       
+        
+         <li class="nav-item active">
+        <a class="nav-link bg-info" href="../cancel">Cancelled Class</a>
+      </li> 
+      </ul>
+      </div>
+      </nav>
+{{>header}}
+
+<h2 class="bg-danger" style="color: rgb(20, 20, 20);">Cancelled Class</h2>
+
+<table>
+  <tr class="table-success">
+    <th>Subject</th>
+    <th>Teacher Name</th>
+    <th>Time</th>
+    <th>Class Alloted</th>
+    <th>Reason</th>
+  </tr>
+  <tr>
+    <td>Cap 916</td>
+    <td>Anik Sir</td>
+    <td>09:00-10:00</td>
+    <td>38-801</td>
+    <td class="bg-warning">One India</td>
+  </tr>
+  <tr>
+    <td>Cap 126</td>
+    <td>Rohit Sir</td>
+    <td>10:00-11:00</td>
+    <td>38-605a</td>
+    <td class="bg-warning">HOS Interaction</td>
+  </tr>
+  <tr>
+    <td>Cap 919</td>
+    <td>Mandeep mam</td>
+    <td>03:00-05:00</td>
+    <td>38-708</td>
+    <td class="bg-warning">Placement Talk</td>
+  </tr>
+  <tr>
+    <td>Cap 918</td>
+    <td>Anjali mam</td>
+    <td>03:00-05:00</td>
+    <td>38-802</td>
+    <td class="bg-warning">Teacher On Leave</td>
+  </tr>
+  <tr>
+    <td>INT888</td>
+    <td>Swati Mam</td>
+    <td>12:00-01:00</td>
+    <td>38-704</td>
+    <td class="bg-warning">Industrial Visit</td>
+  </tr>
+  <tr>
+    <td>Bsl124</td>
+    <td>Disha Mam</td>
+    <td>01:00-02:00</td>
+    <td>38-702</td>
+    <td class="bg-warning">Covid-19</td>
+  </tr>
+</table>
+{{>footer}}
+</body>
+</html>
